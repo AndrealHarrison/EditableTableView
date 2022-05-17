@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var ds:DataStore! = DataStore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,8 @@ class ViewController: UIViewController {
 }
 
 class EditableViewController: UITableViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,6 +46,7 @@ class Animal {
 }
 
 class DataStore {
+    
     var persons:[Animal]
     init() {
         let animal1 = Animal(animalName: "Billy", color:"red and white", type:"dog")
