@@ -22,10 +22,16 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTV-rT-xcO">
                                     <rect key="frame" x="8" y="8" width="195" height="28"/>
                                     <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="EditToggle:" destination="GAt-Ni-hA8" eventType="touchUpInside" id="DPz-QF-x7L"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-ve-eh8">
                                     <rect key="frame" x="211" y="8" width="195" height="28"/>
-                                    <state key="normal" title="Add"/>
+                                    <state key="normal" title="Add Animal"/>
+                                    <connections>
+                                        <action selector="addAnimal" destination="GAt-Ni-hA8" eventType="touchUpInside" id="916-vt-yLg"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
