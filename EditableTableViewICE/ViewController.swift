@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class EditableViewController: UITableViewController {
     
     var data : AnimalsDB!
     var animals = ["Dog", "Cat", "Lizard", "Giraffe", "Wallaby", "Chinchilla"]
