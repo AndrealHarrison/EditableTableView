@@ -20,11 +20,11 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTV-rT-xcO">
-                                    <rect key="frame" x="8" y="7" width="195" height="30"/>
+                                    <rect key="frame" x="8" y="8" width="195" height="28"/>
                                     <state key="normal" title="Edit"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-ve-eh8">
-                                    <rect key="frame" x="211" y="7" width="195" height="30"/>
+                                    <rect key="frame" x="211" y="8" width="195" height="28"/>
                                     <state key="normal" title="Add"/>
                                 </button>
                             </subviews>
@@ -32,9 +32,16 @@
                             <constraints>
                                 <constraint firstItem="QTV-rT-xcO" firstAttribute="leading" secondItem="ZNi-1Y-BaW" secondAttribute="leading" constant="8" id="22x-Zk-RMC"/>
                                 <constraint firstAttribute="trailing" secondItem="vdh-ve-eh8" secondAttribute="trailing" constant="8" id="Dln-ek-maF"/>
+                                <constraint firstAttribute="bottom" secondItem="vdh-ve-eh8" secondAttribute="bottom" constant="8" id="Eb6-wd-wfx"/>
                                 <constraint firstItem="vdh-ve-eh8" firstAttribute="width" secondItem="QTV-rT-xcO" secondAttribute="width" id="I1k-m5-aEn"/>
+                                <constraint firstAttribute="bottom" secondItem="QTV-rT-xcO" secondAttribute="bottom" constant="8" id="J6X-pO-7ia"/>
                                 <constraint firstItem="QTV-rT-xcO" firstAttribute="centerY" secondItem="ZNi-1Y-BaW" secondAttribute="centerY" id="XCE-h4-gtD"/>
+                                <constraint firstItem="QTV-rT-xcO" firstAttribute="centerY" secondItem="ZNi-1Y-BaW" secondAttribute="centerY" id="YAU-Vn-QpS"/>
                                 <constraint firstItem="vdh-ve-eh8" firstAttribute="leading" secondItem="QTV-rT-xcO" secondAttribute="trailing" constant="8" id="YaD-z1-cl0"/>
+                                <constraint firstItem="QTV-rT-xcO" firstAttribute="top" secondItem="ZNi-1Y-BaW" secondAttribute="top" constant="8" id="gUH-Si-CWu"/>
+                                <constraint firstItem="vdh-ve-eh8" firstAttribute="width" secondItem="QTV-rT-xcO" secondAttribute="width" id="mf2-OQ-yAY"/>
+                                <constraint firstItem="vdh-ve-eh8" firstAttribute="centerY" secondItem="ZNi-1Y-BaW" secondAttribute="centerY" id="nBc-9z-wQt"/>
+                                <constraint firstItem="vdh-ve-eh8" firstAttribute="top" secondItem="ZNi-1Y-BaW" secondAttribute="top" constant="8" id="py8-he-vpG"/>
                                 <constraint firstItem="vdh-ve-eh8" firstAttribute="centerY" secondItem="ZNi-1Y-BaW" secondAttribute="centerY" id="r93-3B-wmV"/>
                             </constraints>
                         </view>

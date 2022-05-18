@@ -15,7 +15,9 @@ class AnimalsDB {
         let newAnimal = Animal(name: name)
         animals.append(newAnimal)
     }
-
+    func remove(atIndex: Int) {
+               animals.remove(at:atIndex)
+           }
 
     init() {
         let animal1 = Animal(name: "Dog")

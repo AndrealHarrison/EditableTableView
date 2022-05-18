@@ -16,6 +16,18 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                 section: Int) -> String? {
+
+        return "Animals"
+     }
+     // Create a standard footer that includes the returned text.
+     override func tableView(_ tableView: UITableView, titleForFooterInSection
+                                 section: Int) -> String? {
+        return "End of animals list"
+     }
+
 
     @IBAction func addAnimal() {
         if (animals.count > 0) {
@@ -42,7 +54,14 @@ class ViewController: UITableViewController {
             sender.setTitle("Done", for: .normal)
         }
     }
-
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+                if( editingStyle == .delete) {
+                    animals.append(data.animals[indexPath.row].name)
+                    data.remove(atIndex: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                }
+            }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.animals.count
     }
