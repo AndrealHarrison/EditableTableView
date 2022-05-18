@@ -15,6 +15,7 @@
 		3F0FC50B283442CF00F19E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FC509283442CF00F19E10 /* LaunchScreen.storyboard */; };
 		3F0FC516283442D000F19E10 /* EditableTableViewICETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC515283442D000F19E10 /* EditableTableViewICETests.swift */; };
 		3F0FC521283442D000F19E10 /* EditableTableViewICEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC520283442D000F19E10 /* EditableTableViewICEUITests.swift */; };
+		3F0FC53128346A9400F19E10 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC53028346A9400F19E10 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F0FC51C283442D000F19E10 /* EditableTableViewICEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EditableTableViewICEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0FC520283442D000F19E10 /* EditableTableViewICEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableTableViewICEUITests.swift; sourceTree = "<group>"; };
 		3F0FC522283442D000F19E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0FC53028346A9400F19E10 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3F0FC507283442CF00F19E10 /* Assets.xcassets */,
 				3F0FC509283442CF00F19E10 /* LaunchScreen.storyboard */,
 				3F0FC50C283442CF00F19E10 /* Info.plist */,
+				3F0FC53028346A9400F19E10 /* Animal.swift */,
 			);
 			path = EditableTableViewICE;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0FC503283442CE00F19E10 /* ViewController.swift in Sources */,
+				3F0FC53128346A9400F19E10 /* Animal.swift in Sources */,
 				3F0FC4FF283442CE00F19E10 /* AppDelegate.swift in Sources */,
 				3F0FC501283442CE00F19E10 /* SceneDelegate.swift in Sources */,
 			);

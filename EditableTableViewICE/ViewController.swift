@@ -22,43 +22,54 @@ class ViewController: UIViewController {
 class EditableViewController: UITableViewController {
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-}
+    var data : Animal!
+       var animals = ["Billy", "Leo", "Lucy"]
 
-class Animal {
-    var animalName: String
-    var color: String
-    var type: String
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           // Do any additional setup after loading the view.
+       }
 
-    init(animalName: String, color:String, type: String) {
-        self.animalName = animalName
-        self.color = color
-        self.type = type
-    
-    }
+       @IBAction func addAnimal() {
+           if (animals.count > 0) {
+               let randomIndex = Int(arc4random_uniform(UInt32(animals.count)))
+               data.addAnimal(name: animals[randomIndex])
+               //update tableview row
+               let indexPath = IndexPath(row: data.animals.count-1, section: 0)
+               tableView.insertRows(at:[indexPath], with: .automatic)
 
-    convenience init() {
-        self.init(animalName:"[Unnamed]", color:"[blank]", type: <#String#>)
-    }
-}
+               //remove random country from country array
+               animals.remove(at: randomIndex)
 
-class DataStore {
-    
-    var persons:[Animal]
-    init() {
-        let animal1 = Animal(animalName: "Billy", color:"red and white", type:"dog")
-        let animal2 = Animal(animalName: "Leo", color:"grey and white", type:"cat")
-        let animal3 = Animal(animalName: "Lucy", color:"black", type:"cat")
-    persons = [animal1, animal2, animal3]
-    }
 
-}
+           }
+       }
+       @IBAction func EditToggle(_ sender: UIButton) {
+           if isEditing {
+               setEditing(false, animated: true)
+               sender.setTitle("Edit", for: .normal)
+           }
+           else {
+               setEditing(true, animated: true)
+               sender.setTitle("Done", for: .normal)
+           }
+       }
 
-class newCustomCell: UITableViewCell {
+       override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return data.animalName.count
+       }
 
-}
+       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        cell.textLabel?.text = data.animals[indexPath.row].animals
+           cell.detailTextLabel?.text = ""
+
+           return cell
+       }
+
+
+   }
+
 
 
