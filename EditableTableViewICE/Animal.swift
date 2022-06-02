@@ -10,8 +10,10 @@ import Foundation
 
 class Animal {
     var name: String!
+    public var points: Int
 
     init(name: String) {
         self.name = name
+        self.points = Int.random(in: 1...99)
     }
 }

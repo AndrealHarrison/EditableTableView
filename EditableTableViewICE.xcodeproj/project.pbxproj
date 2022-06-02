@@ -17,6 +17,7 @@
 		3F0FC521283442D000F19E10 /* EditableTableViewICEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC520283442D000F19E10 /* EditableTableViewICEUITests.swift */; };
 		3F0FC53128346A9400F19E10 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC53028346A9400F19E10 /* Animal.swift */; };
 		3F0FC5332834B3CF00F19E10 /* AnimalDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC5322834B3CF00F19E10 /* AnimalDB.swift */; };
+		3FAC4AD62849616C00404C2E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4AD52849616C00404C2E /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F0FC522283442D000F19E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0FC53028346A9400F19E10 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		3F0FC5322834B3CF00F19E10 /* AnimalDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDB.swift; sourceTree = "<group>"; };
+		3FAC4AD52849616C00404C2E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				3F0FC4FE283442CE00F19E10 /* AppDelegate.swift */,
 				3F0FC500283442CE00F19E10 /* SceneDelegate.swift */,
+				3FAC4AD52849616C00404C2E /* DetailView.swift */,
 				3F0FC502283442CE00F19E10 /* ViewController.swift */,
 				3F0FC504283442CE00F19E10 /* Main.storyboard */,
 				3F0FC507283442CF00F19E10 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0FC503283442CE00F19E10 /* ViewController.swift in Sources */,
+				3FAC4AD62849616C00404C2E /* DetailView.swift in Sources */,
 				3F0FC5332834B3CF00F19E10 /* AnimalDB.swift in Sources */,
 				3F0FC53128346A9400F19E10 /* Animal.swift in Sources */,
 				3F0FC4FF283442CE00F19E10 /* AppDelegate.swift in Sources */,

@@ -74,6 +74,18 @@ class EditableViewController: UITableViewController {
 
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "showItem":
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let theAssign = data.animals[row]
+                            let detailViewController = segue.destination as! MyDetailView
 
+                            detailViewController.assign = theAssign
+                        }
+                    default:
+                        preconditionFailure("Unexpected segue")
+                    }
+    }
 
 }
